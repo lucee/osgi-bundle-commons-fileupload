@@ -119,6 +119,8 @@
             <Bundle-SymbolicName>org.lucee.commons.fileupload</Bundle-SymbolicName>
             <Bundle-Description>OSGI version of jar ${project.name}</Bundle-Description>
             <Export-Package>*</Export-Package>
+            <Import-Package>javax.servlet,javax.servlet.http,org.apache.commons.io,org.apache.commons.io.output</Import-Package>
+            <DynamicImport-Package>javax.portlet</DynamicImport-Package>
           </instructions>
         </configuration>
         <extensions>true</extensions>
